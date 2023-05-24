@@ -2,6 +2,7 @@
 
 /*
  * main - Entry point
+ *
  * Using the puts function to print
  * return: Always 0 (Success)
  */
