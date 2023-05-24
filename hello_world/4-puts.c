@@ -3,8 +3,9 @@
 /*
  * main - Entry point
  *
- * Using the puts function to print
- * return: Always 0 (Success)
+ * Description: 'Using the puts function to print'
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
