@@ -3,6 +3,7 @@
 /**
  * main - Entry point
  * Description: Printing out a quote without printf or puts function
+ * Return: always 1 (Successful)
  */
 
 int main(void)
