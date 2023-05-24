@@ -1,2 +1,2 @@
 #!/bin/bash
-export CFILE=cisfun; gcc $CFILE
+export CFILE=cisfun; gcc -std $CFILE
