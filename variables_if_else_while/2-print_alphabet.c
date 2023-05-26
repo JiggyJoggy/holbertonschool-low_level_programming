@@ -3,15 +3,22 @@
 /**
  * main - entry point
  *
- * description:
+ * description: printing the alphabet using putchar
  *
  * Return: Always 0 (Success)
  */
 
-int main(void) {
-	char alphabet = 'abcdefghijklmnopqrstuvwxyz';
+int main(void)
+{
+	char start = 'a';
+	char end = 'z';
 
-	putchar(alphabet);
+	char letter = start;
 
+	while (letter != end)
+	{
+		putchar(letter);
+		letter++;
+	}
 	return (0);
 }
