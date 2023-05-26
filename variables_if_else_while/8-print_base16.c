@@ -10,24 +10,24 @@
 
 int main(void)
 {
-	int start = 0;
-	int end = 9;
+	char start_letter, end_letter, letter;
+	int start_num, end_num, num;
 
-	int num = start;
+	start_num = 0;
+	end_num = 9;
+	start_letter = 'a';
+	end_letter = 'f';
 
-	while (num <= end)
+	num = start_num;
+	letter = start_letter;
+
+	while (num <= end_num)
 	{
 		putchar('0' + num);
 		num++;
 	}
 
-	char start2;
-	start2 = 'a';
-	char end2 = 'f';
-	
-	char letter = start2;
-
-	while (letter <= end2)
+	while (letter <= end_letter)
 	{
 		putchar(letter);
 		letter++;
