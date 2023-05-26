@@ -21,14 +21,15 @@ int main(void)
 		letter++;
 	}
 
-	letter = start;
+	char startupper = 'A';
+	char endupper = 'Z';
 
-	while (letter <= end)
+	char letterupper = startupper
+
+	while (letterupper <= endupper)
 	{
-		char upper;
-		upper = toupper(letter);
-		putchar(upper);
-		letter++;
+		putchar(letterupper);
+		letterupper++;
 	}
 
 	putchar('\n');
