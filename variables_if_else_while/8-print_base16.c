@@ -26,7 +26,7 @@ int main(void)
 
 	char letter = start2;
 
-	while (letter <= end)
+	while (letter <= end22)
 	{
 		putchar(letter);
 		letter++;
