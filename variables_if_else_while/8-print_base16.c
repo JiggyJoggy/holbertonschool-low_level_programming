@@ -21,9 +21,10 @@ int main(void)
 		num++;
 	}
 
-	char start2 = 'a';
+	char start2;
+	start2 = 'a';
 	char end2 = 'f';
-
+	
 	char letter = start2;
 
 	while (letter <= end2)
