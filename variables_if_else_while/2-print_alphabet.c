@@ -15,10 +15,11 @@ int main(void)
 
 	char letter = start;
 
-	while (letter != end)
+	while (letter <= end)
 	{
 		putchar(letter);
 		letter++;
 	}
+	putchar("\n");
 	return (0);
 }
