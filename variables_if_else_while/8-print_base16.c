@@ -29,7 +29,7 @@ int main(void)
 	while (letter <= end)
 	{
 		putchar(letter);
-		letter++
+		letter++;
 	}
 
 	putchar('\n');
