@@ -25,7 +25,9 @@ int main(void)
 
 	while (letter <= end)
 	{
-		putchar(toupper(letter));
+		char upper;
+		upper = toupper(letter);
+		putchar(upper);
 		letter++;
 	}
 
