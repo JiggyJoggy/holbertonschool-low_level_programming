@@ -2,16 +2,25 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - entry point
  *
  * description: printing alphabet
  *
- * Return: Always 0 (Success)
+ * Return: Always void (Success)
  *
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char start = 'a';
+	char end = 'z';
+
+	char letter = start;
+
+	while (letter <= end)
+	{
+		_putchar(letter);
+		letter++;
+	}
+	_putchar('\n');
 }
