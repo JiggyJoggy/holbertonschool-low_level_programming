@@ -37,9 +37,9 @@ void jack_bauer(void)
 				start_minute_two = 0;
 				start_minute++;
 			}
-			if (start_hour == 2 && start_hour_two <= 3)
+			if (start_hour == 2 && start_hour_two == 3)
 			{
-				continue;
+				break;
 			}
 			start_minute = 0;
 			start_hour_two++;
