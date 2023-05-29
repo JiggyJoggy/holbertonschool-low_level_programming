@@ -9,7 +9,7 @@
  * Return: void
  */
 
-void times_table(void);
+void times_table(void)
 {
 	int n;
 
