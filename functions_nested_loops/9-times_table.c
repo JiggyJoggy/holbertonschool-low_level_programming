@@ -5,6 +5,7 @@
  *
  * description: prints num with comma and spaces
  * @n: int to print
+ * @multiple: check multiple int
  *
  * Return: void
  */
@@ -63,7 +64,7 @@ void times_table(void)
 	{
 		int last_num = multiple * 9;
 
-		print_num(0);
+		print_num(0, 0);
 
 		while (increment <= 9)
 		{
