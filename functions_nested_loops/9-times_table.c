@@ -14,7 +14,6 @@ void print_num(int n)
 	_putchar('0' + n);
 	_putchar(',');
 	_putchar(' ');
-	_putchar(' ');
 }
 
 /**
