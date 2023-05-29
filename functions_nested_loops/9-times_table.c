@@ -28,6 +28,7 @@ void print_num(int n)
 
 void print_double(int n, int last)
 {
+	_putchar(' ');
 	_putchar('0' + (n / 10));
 	_putchar('0' + (n % 10));
 
