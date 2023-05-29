@@ -9,10 +9,17 @@
  * Return: void
  */
 
-void print_num(int n)
+void print_num(int n, int multiple)
 {
 	_putchar('0' + n);
 	_putchar(',');
+	_putchar(' ');
+
+	if (n + multiple > 9)
+	{
+		return;
+	}
+
 	_putchar(' ');
 }
 
@@ -28,7 +35,6 @@ void print_num(int n)
 
 void print_double(int n, int last)
 {
-	_putchar(' ');
 	_putchar('0' + (n / 10));
 	_putchar('0' + (n % 10));
 
@@ -75,7 +81,7 @@ void times_table(void)
 				_putchar('0' + curr_num);
 				break;
 			}
-			print_num(curr_num);
+			print_num(curr_num, multiple);
 			increment++;
 		}
 		_putchar('\n');
