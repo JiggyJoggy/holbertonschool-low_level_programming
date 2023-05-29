@@ -12,13 +12,5 @@
 
 void print_to_98(int n)
 {
-	int end_num;
-
-	end_num = 98;
-
-	while (n <= end_num)
-	{
-		printf(n);
-		n++;
-	}
+	
 }
