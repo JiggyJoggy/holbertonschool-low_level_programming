@@ -11,11 +11,10 @@
 
 void times_table(void)
 {
-	int n;
-
 	for (int i = 1; i <= 9; i++)
 	{
-		_putchar("%d * %d = %d", n, i, n * i);
-	}
-	return (void);
+		_putchar(i);
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
 }
