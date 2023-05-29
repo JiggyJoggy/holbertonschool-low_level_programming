@@ -15,7 +15,7 @@ void times_table(void);
 
 	for (int i = 1; i <= 9; i++)
 	{
-		_putchar("%d * %d = %d", n, i, n * i)
+		_putchar("%d * %d = %d", n, i, n * i);
 	}
-	return (void)
+	return (void);
 }
