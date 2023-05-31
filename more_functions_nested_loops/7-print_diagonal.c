@@ -15,25 +15,21 @@ void print_diagonal(int n)
 	int index;
 	int space;
 
-	index = 0;
-	space = 0;
-
 	if (n > 0)
 	{
-		while (index <= n)
+		for (index = 0; index <= n; index++)
 		{
-			while (space < index)
+			for (space = 1; space < index; space++)
 			{
 				_putchar(' ');
 			}
-			space++;
-		}
-		index++;
 		_putchar(92); /* ASCII Slash */
 		_putchar('\n');
+		}
 	}
 	else
 	{
 		_putchar('\n');
 	}
+
 }
