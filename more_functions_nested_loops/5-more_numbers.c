@@ -13,6 +13,7 @@ void more_numbers(void)
 {
 	int loop;
 	int index;
+	int extra_digit;
 
 	loop = 0;
 	index = 0;
