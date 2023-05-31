@@ -26,6 +26,7 @@ void more_numbers(void)
 			if (index >= 10)
 			{
 				_putchar(extra_digit + '0');
+				index = 0;
 			}
 			_putchar(index + '0');
 			index++;
