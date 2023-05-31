@@ -13,6 +13,8 @@ void print_numbers(void)
 {
 	int index;
 
+	index = 0;
+
 	while (index <= 9)
 	{
 		_putchar(index + '0');
