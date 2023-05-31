@@ -18,7 +18,7 @@ void print_line(int n)
 
 	if (n > 0)
 	{
-		while (index <= n)
+		while (index < n)
 		{
 			_putchar(95); /* 95 is the underscore */
 			index++;
