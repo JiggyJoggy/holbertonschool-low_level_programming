@@ -16,15 +16,20 @@ void more_numbers(void)
 
 	loop = 0;
 	index = 0;
+	extra_digit = 1;
 
 	while (loop <= 10)
 	{
 		while (index <= 14)
 		{
+			if (index >= 10)
+			{
+				_putchar(extra_digit + '0');
+			}
 			_putchar(index + '0');
 			index++;
 		}
+		_putchar('\n');
 		loop++;
 	}
-	_putchar('\n');
 }
