@@ -20,7 +20,7 @@ void print_line(int n)
 	{
 		while (index <= n)
 		{
-			_putchar('_' + '0');
+			_putchar(95); /* 95 is the underscore */
 			index++;
 		}
 		_putchar('\n');
