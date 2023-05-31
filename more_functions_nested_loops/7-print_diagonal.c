@@ -22,13 +22,13 @@ void print_diagonal(int n)
 	{
 		while (index <= n)
 		{
-			index++;
 			while (space < index)
 			{
 				_putchar(' ');
-				space++;
 			}
+			space++;
 		}
+		index++;
 		_putchar(92); /* ASCII Slash */
 		_putchar('\n');
 	}
