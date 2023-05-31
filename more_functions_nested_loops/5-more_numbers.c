@@ -13,25 +13,17 @@ void more_numbers(void)
 {
 	int loop;
 	int index;
-	int extra_digit;
 
-	loop = 0;
-	index = 0;
-	extra_digit = 1;
-
-	while (loop <= 10)
+	for (loop = 1; loop <= 10; loop++)
 	{
-		while (index <= 14)
+		for (index = 0; index <= 14; index++)
 		{
-			if (index >= 10)
+			if (index > 9)
 			{
-				_putchar(extra_digit + '0');
-				index = 0;
+				_putchar(index / 10 + '0');
 			}
-			_putchar(index + '0');
-			index++;
+			_putchar(index % 10 + '0');
 		}
 		_putchar('\n');
-		loop++;
 	}
 }
