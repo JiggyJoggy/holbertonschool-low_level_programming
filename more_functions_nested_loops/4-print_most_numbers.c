@@ -19,6 +19,7 @@ void print_most_numbers(void)
 	{
 		if (index == 2 || index == 4)
 		{
+			index++;
 			continue;
 		}
 		_putchar(index + '0');
