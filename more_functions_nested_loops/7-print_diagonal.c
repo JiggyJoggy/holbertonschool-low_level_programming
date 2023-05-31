@@ -13,16 +13,23 @@
 void print_diagonal(int n)
 {
 	int index;
+	int space;
 
 	index = 0;
+	space = 0;
 
 	if (n > 0)
 	{
-		while (index < n)
+		while (index <= n)
 		{
-			_putchar(92); /* ASCII Slash */
-			_putchar(' ');
+			index++;
+			while (space < index)
+			{
+				_putchar(' ');
+				space++;
+			}
 		}
+		_putchar(92); /* ASCII Slash */
 		_putchar('\n');
 	}
 	else
