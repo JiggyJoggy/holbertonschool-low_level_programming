@@ -24,6 +24,7 @@ void print_line(int n)
 			index++;
 		}
 		_putchar('\n');
+	}
 	else
 	{
 		_putchar('\n');
