@@ -31,8 +31,8 @@ void print_diagonal(int n)
 					_putchar(' ');
 				}
 			}
-		_putchar(92); /* ASCII Slash */
-		_putchar('\n');
+			_putchar(92); /* ASCII Slash */
+			_putchar('\n');
 		}
 	}
 	else
