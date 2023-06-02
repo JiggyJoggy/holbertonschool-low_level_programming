@@ -21,10 +21,10 @@ void print_square(int size)
 	}
 	else
 	{
-		for (index = 0; index < size; index++)
+		for (index = 1; index <= size; index++)
 		{
 
-			for (index1 = 0; index < size; index1++)
+			for (index1 = 1; index <= size; index1++)
 			{
 				_putchar('#');
 			}
