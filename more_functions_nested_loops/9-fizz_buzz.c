@@ -28,7 +28,7 @@ int main(void)
 		}
 		else
 		{
-			printf(index);
+			printf("%d", index);
 		}
 	}
 	return (1);
