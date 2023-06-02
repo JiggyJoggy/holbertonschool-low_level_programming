@@ -30,6 +30,11 @@ int main(void)
 		{
 			printf("%d", index);
 		}
+		if (index == 100)
+		{
+			printf('\n');
+			break;
+		}
 		printf(" ");
 	}
 	return (1);
