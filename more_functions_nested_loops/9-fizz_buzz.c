@@ -32,7 +32,7 @@ int main(void)
 		}
 		if (index == 100)
 		{
-			printf('\n');
+			printf("\n");
 			break;
 		}
 		printf(" ");
