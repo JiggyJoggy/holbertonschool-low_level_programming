@@ -5,7 +5,7 @@
  *
  * description: print 1 to 100 with fizzbuzz in
  *
- * Return: Always 1
+ * Return: Always 0
  */
 
 int main(void)
@@ -37,5 +37,5 @@ int main(void)
 		}
 		printf(" ");
 	}
-	return (1);
+	return (0);
 }
