@@ -12,7 +12,7 @@ int main(void)
 {
 	int index;
 
-	for (index = 0; index <= 100; index++)
+	for (index = 1; index <= 100; index++)
 	{
 		if (index % 3 == 0)
 		{
@@ -30,6 +30,7 @@ int main(void)
 		{
 			printf("%d", index);
 		}
+		printf(" ");
 	}
 	return (1);
 }
