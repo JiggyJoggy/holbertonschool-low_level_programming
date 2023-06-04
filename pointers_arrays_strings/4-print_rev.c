@@ -16,23 +16,29 @@ void print_rev(char *s)
 
 	start = s;
 
-	while (*s != '\0')
+	if (*s != '\0')
 	{
-		count++;
-		s++;
-	}
-	for (index = 0; index < count; index++)
-	{
-		char c;
-
-		c = *s;
-
-		_putchar(c);
-		if (s == start)
+		while (*s != '\0')
 		{
-			_putchar('\n');
-			break;
+			count++;
+			s++;
 		}
-		s--;
+		for (index = 0; index < count; index++)
+		{
+			char c;
+
+			c = *s;
+
+			_putchar(c);
+			if (s == start)
+			{
+				break;
+			}
+			s--;
+		}
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
