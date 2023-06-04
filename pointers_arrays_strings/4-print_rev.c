@@ -11,35 +11,16 @@
 
 void print_rev(char *s)
 {
-	int count, index;
-	char *start;
+	int count;
 
-	start = s;
-
-	if (*s != '\0')
+	while (s[count] != '\0')
 	{
-		while (*s != '\0')
-		{
-			count++;
-			s++;
-		}
-		for (index = 0; index < count; index++)
-		{
-			char c;
-
-			c = *s;
-
-			_putchar(c);
-			if (s == start)
-			{
-				break;
-			}
-			s--;
-		}
-		_putchar('\n');
+		count++;
 	}
-	else
+
+	for (count = count - 1; count >= 0; count--)
 	{
-		_putchar('\n');
+		_putchar(s[count]);
 	}
+	_putchar('\n');
 }
