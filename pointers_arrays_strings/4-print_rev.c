@@ -31,8 +31,8 @@ void print_rev(char *s)
 		if (s == start)
 		{
 			break;
+			_putchar('\n');
 		}
 		s--;
 	}
-	_putchar('\n');
 }
