@@ -14,9 +14,9 @@ void rev_string(char *s)
 
 	count = 0;
 
-	while (count[s] != '\0')
+	while (s[count] != '\0')
 	{
-		_putchar(count[s]);
+		_putchar(s[count]);
 		count++;
 	}
 
@@ -24,7 +24,7 @@ void rev_string(char *s)
 
 	for (count = count - 1; count >= 0; count--)
 	{
-		_putchar(count[s]);
+		_putchar(s[count]);
 	}
 	_putchar('\n');
 }
