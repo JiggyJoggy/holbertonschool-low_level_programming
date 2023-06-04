@@ -28,7 +28,7 @@ void print_rev(char *s)
 		c = *s;
 
 		_putchar(c);
-		if (s == begin)
+		if (s == start)
 		{
 			break;
 		}
