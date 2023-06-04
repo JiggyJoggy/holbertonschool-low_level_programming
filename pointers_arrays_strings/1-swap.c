@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sawp_int - entry point
+ * swap_int - entry point
  *
  * description: switching the values of two ints
  * @a: int pointer 1
