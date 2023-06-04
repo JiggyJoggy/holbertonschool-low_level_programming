@@ -12,10 +12,9 @@
 void print_rev(char *s)
 {
 	int count, index;
-	char *begin;
-	char ch = *s;
+	char *start;
 
-	begin = s;
+	start = s;
 
 	while (*s != '\0')
 	{
@@ -24,7 +23,11 @@ void print_rev(char *s)
 	}
 	for (index = 0; index < count; index++)
 	{
-		_putchar(ch);
+		char c;
+
+		c = *s;
+
+		_putchar(c);
 		if (s == begin)
 		{
 			break;
