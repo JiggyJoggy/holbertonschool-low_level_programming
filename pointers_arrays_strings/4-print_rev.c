@@ -30,8 +30,8 @@ void print_rev(char *s)
 		_putchar(c);
 		if (s == start)
 		{
-			break;
 			_putchar('\n');
+			break;
 		}
 		s--;
 	}
