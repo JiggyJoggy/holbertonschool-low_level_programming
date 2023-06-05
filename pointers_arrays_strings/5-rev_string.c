@@ -11,21 +11,26 @@
 void rev_string(char *s)
 {
 	int count, index;
-	char *start, *end, ch;
+	char *start_ch, *end_ch, curr_ch;
 
-	count = *s;
+	count = 0;
+	start_ch = s;
+	end_ch = s;
 
-	start = s;
-
-	end = s + count - 1;
-
-	for (index = 0; index < (count - 1) / 2; index++)
+	while (s[count] != '\0')
 	{
-		ch = *end;
-		*end = *start;
-		*start = ch;
+		end_ch++;
+		count++;
+	}
+	end_ch--;
 
-		start++;
-		end--;
+	for (index = 0; index < count /2; index++)
+	{
+		curr_ch = *end_ch;
+		*end_ch = *start_ch;
+		*start_ch = curr_ch;
+
+		start_ch++;
+		end_ch--;
 	}
 }
