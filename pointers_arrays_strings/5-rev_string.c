@@ -23,4 +23,5 @@ void rev_string(char *s)
 		count = count - 1;
 		count--;
 	}
+	count = *s;
 }
