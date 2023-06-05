@@ -18,8 +18,9 @@ void rev_string(char *s)
 	{
 		count++;
 	}
-	while (count = count - 1 >= 0)
+	while (count >= 0)
 	{
+		count = count - 1;
 		count--;
 	}
 }
