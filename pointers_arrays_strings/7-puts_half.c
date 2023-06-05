@@ -14,17 +14,21 @@ void puts_half(char *str)
 	int count, index;
 
 	count = 0;
-	index = 0;
 
 	while (str[count] != '\0')
 	{
 		count++;
 	}
 
-	while (index < (count / 2))
+	for (index = 0; str[index] != '\0'; index++)
 	{
-		_putchar(str[count]);
-		index++;
+		char c = str[index];
+
+		if (index < (count / 2))
+		{
+			continue;
+		}
+		_putchar(c);
 	}
 	_putchar('\n');
 }
