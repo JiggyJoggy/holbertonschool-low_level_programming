@@ -20,6 +20,11 @@ void puts_half(char *str)
 		count++;
 	}
 
+	if (count % 2 == 1)
+	{
+		count--;
+	}
+
 	for (index = 0; str[index] != '\0'; index++)
 	{
 		char c = str[index];
