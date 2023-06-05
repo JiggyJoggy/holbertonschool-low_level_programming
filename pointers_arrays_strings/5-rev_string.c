@@ -24,7 +24,7 @@ void rev_string(char *s)
 	}
 	end_ch--;
 
-	for (index = 0; index < count /2; index++)
+	for (index = 0; index < count / 2; index++)
 	{
 		curr_ch = *end_ch;
 		*end_ch = *start_ch;
