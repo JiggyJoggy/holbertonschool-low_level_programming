@@ -40,6 +40,10 @@ int _atoi(char *s)
 	}
 	if ((pos == 0 || pos > 0) && neg % 2 == 1)
 	{
+		if (result > 2147483647)
+		{
+			result = (unsigned) result;
+		}
 		result = result * -1;
 	}
 	return (result);
