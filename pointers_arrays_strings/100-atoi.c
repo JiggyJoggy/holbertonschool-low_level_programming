@@ -11,7 +11,8 @@
 
 int _atoi(char *s)
 {
-	int count, result, pos, neg;
+	int count, pos, neg;
+	unsigned int result;
 
 	result = 0;
 	pos = 0;
@@ -40,10 +41,6 @@ int _atoi(char *s)
 	}
 	if ((pos == 0 || pos > 0) && neg % 2 == 1)
 	{
-		if (result > 2147483647)
-		{
-			result = (unsigned) result;
-		}
 		result = result * -1;
 	}
 	return (result);
