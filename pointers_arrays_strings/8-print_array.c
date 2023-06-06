@@ -14,8 +14,15 @@ void print_array(int *a, int n)
 {
 	int loop;
 
-	for (loop = 0; loop <= n; loop++)
+	for (loop = 0; loop < n; loop++)
 	{
-		printf("%d, ", *a[n]);
+		if (loop == n)
+		{
+			printf("%d", );
+		}
+		else
+		{
+			printf("%d, ", a[n]);
+		}
 	}
 }
