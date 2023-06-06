@@ -12,11 +12,11 @@
 
 void print_array(int *a, int n)
 {
-	int a[n];
+	int *a[n];
 	int loop;
 
 	for (loop = 0; loop <= n; loop++)
 	{
-		printf("%d, ", a[n]);
+		printf("%d, ", *a[n]);
 	}
 }
