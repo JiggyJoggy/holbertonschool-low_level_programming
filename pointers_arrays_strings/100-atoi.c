@@ -20,11 +20,7 @@ int _atoi(char *s)
 
 	for (count = 0; s[count] != '\0'; count++)
 	{
-		if (s[count] == '+')
-		{
-			pos++;
-		}
-		else if (s[count] == '-')
+		if (s[count] == '-')
 		{
 			neg++;
 		}
@@ -39,7 +35,7 @@ int _atoi(char *s)
 			}
 		}
 	}
-	if ((pos == 0 || pos > 0) && neg % 2 == 1)
+	if (neg % 2 == 1)
 	{
 		result = result * -1;
 	}
