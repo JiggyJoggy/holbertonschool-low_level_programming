@@ -11,11 +11,10 @@
 
 int _atoi(char *s)
 {
-	int count, pos, neg;
+	int count, neg;
 	unsigned int result;
 
 	result = 0;
-	pos = 0;
 	neg = 0;
 
 	for (count = 0; s[count] != '\0'; count++)
