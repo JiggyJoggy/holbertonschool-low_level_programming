@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * _strcat - entry point
  *
  * description: concatenates two strings
