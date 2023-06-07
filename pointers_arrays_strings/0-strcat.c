@@ -13,8 +13,9 @@
 char *_strcat(char *dest, char *src)
 {
 	char *cat = dest;
+	int count;
 
-	while (*src != '\0')
+	for (count = 0; *src != '\0'; count++)
 	{
 		*dest = *src;
 		dest++;
