@@ -14,6 +14,9 @@ char *_strcat(char *dest, char *src)
 {
 	int count_s, count_d;
 
+	count_s = 0;
+	count_d = 0;
+
 	while (dest[count_d] != '\0')
 	{
 		count_d++;
@@ -24,7 +27,7 @@ char *_strcat(char *dest, char *src)
 		count_d++;
 		count_s++;
 	}
-	*dest = '\0';
+	dest[count_d] = '\0';
 
 	return (dest);
 }
