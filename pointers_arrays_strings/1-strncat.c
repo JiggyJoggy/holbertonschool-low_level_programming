@@ -16,7 +16,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int count = 0;
-	char *ptr;
+	char* ptr;
 
 	*ptr = dest;
 
