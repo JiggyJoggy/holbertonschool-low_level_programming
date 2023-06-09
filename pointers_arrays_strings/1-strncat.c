@@ -17,18 +17,15 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char *ptr = dest;
+	int index_d, index_s;
 
-	while (*dest != '\0')
-	{
-		dest++;
-	}
+	for (index_d = 0; dest[index_d] != '\0'; index_d++);
 
-	while (*src != '\0' && n--)
+	for (index_s = 0; src[index_s] != '\0' && < num; index_s++)
 	{
-		*ptr++ = *src++;
+		dest[index_d + index_s] = src[index_s];
 	}
-	*ptr = '\0';
+	dest[index_s + index_d] = '\0';
 
 	return (dest);
 }
