@@ -21,9 +21,9 @@ char *_strncpy(char *dest, char *src, int n)
 		index_d++;
 	}
 
-	for (; src[index_s] != '\0' && index_s > n; index_s++)
+	for (; src[index_s] != '\0' && index_s < n; index_s++)
 	{
-		dest[index_d] = src[index_s];
+		dest[index_d] = src[index_s] - n;
 	}
 	dest[index_d] = '\0';
 
