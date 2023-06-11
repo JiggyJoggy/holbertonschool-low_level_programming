@@ -15,7 +15,7 @@ void reverse_array(int *a, int n)
 {
 	int start, end, curr;
 
-	for (start = 0, end = n - 1; start < n / 2; start++, index--)
+	for (start = 0, end = n - 1; start < n / 2; start++, end--)
 	{
 		curr = end;
 		end = start;
