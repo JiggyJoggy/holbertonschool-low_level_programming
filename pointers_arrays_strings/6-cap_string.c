@@ -67,7 +67,7 @@ char *cap_string(char *s)
 			{
 				s[count] = s[count] - 32;
 			}
-			else if (count == '}')
+			else
 			{
 				s[count] = s[count] - 32;
 			}
