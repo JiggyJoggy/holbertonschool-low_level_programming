@@ -19,6 +19,6 @@ void reverse_array(int *a, int n)
 	{
 		*a = start;
 		start = end;
-		end = a*;
+		end = *a;
 	}
 }
