@@ -71,6 +71,7 @@ char *cap_string(char *s)
 			{
 				s[count] = s[count] - 32;
 			}
+		}
 	}
 	return (s);
 }
