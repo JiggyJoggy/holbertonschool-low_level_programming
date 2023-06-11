@@ -4,6 +4,7 @@
  * string_toupper - entry point
  *
  * description: changes all lowercase letters to an uppercase; string
+ * @s: taking a string/char
  *
  * Return: char
  */
