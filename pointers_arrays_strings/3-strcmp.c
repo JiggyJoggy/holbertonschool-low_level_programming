@@ -18,7 +18,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		total_s1 = s1[index_s1];
 	}
-	
+
 	for (index_s2 = 0; s2[index_s2] != '\0'; index_s2++)
 	{
 		total_s2 = s1[index_s2];
@@ -30,6 +30,6 @@ int _strcmp(char *s1, char *s2)
 	}
 	else
 	{
-		return (total_s1 - total_s2);
+		return ((int)(unsigned char)(*s1) - (int)(unsigned char)(*s2));
 	}
 }
