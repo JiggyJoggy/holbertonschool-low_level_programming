@@ -21,7 +21,7 @@ int _strcmp(char *s1, char *s2)
 	
 	for (index_s2 = 0; s2[index_s2] != '\0'; index_s2++)
 	{
-		total_s2 = s1[indexs_2];
+		total_s2 = s1[index_s2];
 	}
 
 	if (total_s1 == total_s2)
