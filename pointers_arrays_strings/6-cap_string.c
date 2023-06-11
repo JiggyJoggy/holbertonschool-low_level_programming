@@ -19,9 +19,58 @@ char *cap_string(char *s)
 		{
 			count++;
 
-			if (count == 0 || s[count - 1] == ' ' || s[count - 1] == '\t' || s[count - 1] == '\n' || s[count - 1] == ',' || s[count - 1] == ';' || s[count - 1] == '.' || s[count - 1] == '!' || s[count - 1] == '?' || s[count - 1] == '"' || s[count - 1] == '(' || s[count - 1] == ')' || s[count - 1] == '{' || s[count - 1] == '}')
+			if (count == 0)
+			{
 				s[count] = s[count] - 32;
-		}
+			}
+			else if (count == '\t')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == '\n')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == ',')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == ';')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == '.')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == '!')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == '?')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == '"')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == '(')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == ')')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == '{')
+			{
+				s[count] = s[count] - 32;
+			}
+			else if (count == '}')
+			{
+				s[count] = s[count] - 32;
+			}
 	}
 	return (s);
 }
