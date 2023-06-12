@@ -11,22 +11,17 @@
 
 char *cap_string(char *s)
 {
-	int count;
+	int string_index, arr_index, are_len = 13;
+	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-	for (count = 0; s[count] != '\0'; count++)
+	for (string_index = 0; s[string_index] != '\0'; string_index++)
 	{
-		while (!(s[count] >= 'a' && s[count] <= 'z'))
+		for (arr_index = 0; arr_index < arr_len; arr_index++)
 		{
-			count++;
-
-			if (count == 0 || s[count - 1] == ' ' || s[count - 1] == '\t'
-			|| s[count - 1] == '\n' || s[count - 1] == ',' ||
-			s[count - 1] == ';' || s[count - 1] == ',' ||
-			s[count - 1] == ';' || s[count - 1] == '.' || s[count - 1] == '!'
-			|| s[count - 1] == '?' || s[count - 1] == '"' || s[count - 1] ==
-			'(' || s[count - 1] == ')' || s[count - 1] == '{' || s[count - 1] == '}')
+			if (sep[arr_index] == s[string_index] && (s[string_index + 1] >= 'a' s[string_index + 1] <= 'z'))
 			{
-				s[count] = s[count] - 32;
+				s[string_index + 1] -= 32;
+				break;
 			}
 		}
 	}
