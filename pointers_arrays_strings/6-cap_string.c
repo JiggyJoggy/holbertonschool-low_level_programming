@@ -22,9 +22,9 @@ char *cap_string(char *s)
 		for (arr_index = 0; arr_index < arr_len; arr_index++)
 		{
 			if (sep[arr_index] == s[string_index] &&
-			(s[string_index + 1] >= 'a' && s[string_index + 1] <= 'z'))
+			(s[string_index - 1] >= 'a' && s[string_index - 1] <= 'z'))
 			{
-				s[string_index + 1] -= 32;
+				s[string_index - 1] -= 32;
 				break;
 			}
 		}
