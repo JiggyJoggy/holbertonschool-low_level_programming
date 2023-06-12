@@ -24,7 +24,7 @@ char *cap_string(char *s)
 			if (sep[arr_index] == s[string_index] &&
 			(s[string_index + 1] >= 'a' && s[string_index + 1] <= 'z'))
 			{
-				s[string_index - 1] -= 32;
+				s[string_index + 1] -= 32;
 				break;
 			}
 		}
