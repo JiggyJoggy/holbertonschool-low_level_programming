@@ -23,7 +23,7 @@ char *leet(char *c)
 		{
 			if (c[count] == encode[arr_index])
 			{
-				c[count] = encode_nums[arr_index];
+				c[count] = encode_nums[count, arr_index];
 			}
 		}
 	}
