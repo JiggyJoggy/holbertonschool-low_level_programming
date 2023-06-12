@@ -12,6 +12,7 @@
 char *leet(char *c)
 {
 	char encode[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	char encode_nums[5] = {'4', '3', '0', '7', '1'}
 	int count, arr_index, encode_len;
 
 	encode_len = 10;
@@ -22,7 +23,7 @@ char *leet(char *c)
 		{
 			if (c[count] == encode[arr_index])
 			{
-				c[count] = encode[arr_index];
+				c[count] = encode_nums[arr_index]
 			}
 		}
 	}
