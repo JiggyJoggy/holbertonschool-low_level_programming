@@ -25,10 +25,12 @@ char *cap_string(char *s)
 			(s[string_index + 1] >= 'a' && s[string_index + 1] <= 'z'))
 			{
 				s[string_index + 1] -= 32;
+				break;
 			}
 			else if (string_index == 0)
 			{
 				s[string_index] -= 32;
+				break;
 			}
 		}
 	}
