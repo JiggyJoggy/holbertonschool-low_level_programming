@@ -12,10 +12,10 @@
 char *cap_string(char *s)
 {
 	int string_index, arr_index, arr_len;
-	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!',
+	char sep[14] = {'0',' ', '\t', '\n', ',', ';', '.', '!',
 		'?', '"', '(', ')', '{', '}'};
 
-	arr_len = 13;
+	arr_len = 14;
 
 	for (string_index = 0; s[string_index] != '\0'; string_index++)
 	{
