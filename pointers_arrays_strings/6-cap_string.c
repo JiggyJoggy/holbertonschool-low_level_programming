@@ -19,20 +19,23 @@ char *cap_string(char *s)
 
 	for (string_index = 0; s[string_index] != '\0'; string_index++)
 	{
+		if (s[string_index] >= 'a' && s[string_index] <= 'z' && string_index == 0)
+		{
+			s[string_index] -= 32;
+			continue;
+		}
+
 		for (arr_index = 0; arr_index < arr_len; arr_index++)
 		{
-			if (sep[arr_index] == s[string_index] &&
-			(s[string_index + 1] >= 'a' && s[string_index + 1] <= 'z'))
+			if (sep[arr_index] == s[string_index])
 			{
-				s[string_index + 1] -= 32;
-				break;
-			}
-			else if (string_index == 0)
-			{
-				s[string_index] -= 32;
-				break;
+				if (s[string_index + 1] >= 'a' && s[string_index + 1] <= 'z')
+				{
+					s[string_index + 1] -= 32;
+					break;
+				}
 			}
 		}
 	}
-	return (s);
+
 }
