@@ -12,7 +12,7 @@
 char *leet(char *c)
 {
 	char encode[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	char encode_nums[5] = {'4', '3', '0', '7', '1'};
+	char encode_nums[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 	int count, arr_index, encode_len;
 
 	encode_len = 10;
