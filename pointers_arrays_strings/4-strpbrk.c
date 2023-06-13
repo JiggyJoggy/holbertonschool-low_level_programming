@@ -12,7 +12,6 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int count_s1, count_s2;
 	char *temp;
 
 	while (*s != '\0')
