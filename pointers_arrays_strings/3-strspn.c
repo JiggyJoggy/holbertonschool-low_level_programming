@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _strspn - entry point
@@ -27,15 +26,14 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			index_s2++;
 
-			bool match = false;
-
 			if (s[index_s1] == accept[index_s2])
 			{
-				match = true;
 				break;
 			}
-			if (!match) break;
-			else counter++;
+			else
+			{
+				counter++;
+			}
 		}
 	}
 	return (counter);
