@@ -28,11 +28,11 @@ unsigned int _strspn(char *s, char *accept)
 
 			if (s[index_s1] == accept[index_s2])
 			{
-				break;
+				counter++;
 			}
 			else
 			{
-				counter++;
+				continue;
 			}
 		}
 	}
