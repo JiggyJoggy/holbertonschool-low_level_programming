@@ -21,7 +21,7 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		for (count = 0; s[count] < n; count++)
 		{
-			s[count] == '&';
+			s[count] = b;
 		}
 	}
 	return (s);
