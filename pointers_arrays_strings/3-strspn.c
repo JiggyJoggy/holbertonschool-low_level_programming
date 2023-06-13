@@ -22,6 +22,11 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		index_s1++;
 
+		if (counter != index_s1)
+		{
+			break;
+		}
+
 		while (*accept++)
 		{
 			index_s2++;
@@ -29,10 +34,6 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[index_s1] == accept[index_s2])
 			{
 				counter++;
-			}
-			else
-			{
-				break;
 			}
 		}
 	}
