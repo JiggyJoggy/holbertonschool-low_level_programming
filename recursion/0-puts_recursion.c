@@ -11,5 +11,12 @@
 
 void _puts_recursion(char *s)
 {
-	_putchar(s * _puts_recirsion(s - '0'));
+	if (s != '\0')
+	{
+		_putchar(s * _puts_recirsion(s - '0'));
+	}
+	else
+	{
+		_putchar('\n');
+	}
 }
