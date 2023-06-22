@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (index_1 = 0; index_1 < argc; index_1++)
+	for (index_1 = 1; index_1 < argc; index_1++)
 	{
 		len = strlen(argv[index_1]);
 		sum += atoi(argv[index_1]);
