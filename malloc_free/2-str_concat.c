@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	memcpy(cat_str, s1, len_1);
-	memcpy(cat_str + len_1, s2);
+	memcpy(cat_str + len_1, s2, len_2);
 	cat_str[new - 1] = '\0';
 
 	return (cat_str);
