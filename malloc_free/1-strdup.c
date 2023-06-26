@@ -19,8 +19,13 @@ char *_strdup(char *str)
 	static char *copy;
 	char *copy_offset;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	str_size = strlen(str);
-	copy = (char * ) malloc(sizeof(char) *str_size + 1);
+	copy = (char *) malloc(sizeof(char) * str_size + 1);
 
 	if (copy == NULL)
 	{
