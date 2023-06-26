@@ -20,11 +20,11 @@ char *_strdup(char *str)
 	char *copy_offset;
 
 	str_size = strlen(str);
-	copy = (char *) malloc(sizeof(char) *str_size + 1);
+	copy = (char * ) malloc(sizeof(char) *str_size + 1);
 
 	if (copy == NULL)
 	{
-		return ((char *) NULL);
+		return (NULL);
 	}
 
 	copy_offset = copy;
