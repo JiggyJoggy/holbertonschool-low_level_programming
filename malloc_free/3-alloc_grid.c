@@ -37,5 +37,7 @@ int **alloc_grid(int width, int height)
 			ptr[index][index_2] = 0;
 		}
 	}
+	free(ptr);
+
 	return (ptr);
 }
