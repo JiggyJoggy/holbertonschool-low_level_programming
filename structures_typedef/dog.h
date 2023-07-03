@@ -1,5 +1,5 @@
-#ifndef doggy
-#define dog
+#ifndef DOG
+#define DOG
 /**
  * struct dog - gathering info for dog
  */
