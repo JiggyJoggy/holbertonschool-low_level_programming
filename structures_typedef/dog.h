@@ -1,9 +1,8 @@
 #ifndef doggy
-
+#define dog
 /**
- * dog - gathering info for dog
+ * struct dog - gathering info for dog
  */
-
 struct dog
 {
 	char *name;
