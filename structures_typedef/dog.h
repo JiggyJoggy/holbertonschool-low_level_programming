@@ -1,4 +1,4 @@
-#ifndef
+#ifndef doggy
 
 /**
  * dog - gathering info for dog
