@@ -1,14 +1,9 @@
 #include "variadic_functions.h"
-
 /**
  * print_all - entry point
- *
- * description: function that prints anything
  * @format: list of types
- *
  * Return: void
  */
-
 void print_all(const char * const format, ...)
 {
 	unsigned int holder, index = 0;
