@@ -20,20 +20,20 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (index = 0; index < n; index++)
 	{
 		num = va_arg(ap, int);
+	
+		if (!separator)
+		{
+			separator = "";
+		}
+		if (index == n - 1)
+		{
+			printf("%d", num);
+		}
+		else
+		{
+			printf("%d%s", num, separator);
+		}
+		printf("\n");
 	}
-	if (!separator)
-	{
-		separator = "";
-	}
-	if (index == n - 1)
-	{
-		printf("%d", num);
-	}
-	else
-	{
-		printf("%d%s", num, separator);
-	}
-	printf("\n");
-
 	va_end(ap);
 }
