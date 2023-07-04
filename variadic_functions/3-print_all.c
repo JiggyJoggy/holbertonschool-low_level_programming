@@ -18,11 +18,9 @@ void print_all(const char * const format, ...)
 	while (format)
 	{
 		va_start(ap, format);
-
 		while (format[index])
 		{
 			holder = 1;
-
 			switch (format[index])
 			{
 				case 'c':
@@ -47,7 +45,6 @@ void print_all(const char * const format, ...)
 					holder = 0;
 					break;
 			}
-
 			if (format[index + 1] && holder)
 			{
 				printf(", ");
