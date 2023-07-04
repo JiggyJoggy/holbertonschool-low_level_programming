@@ -9,7 +9,7 @@
  * Return: ptr function
  */
 
-int (*get_op_func(char *))(int, int)
+int (*get_op_func(char *s))(int, int)
 {
 	int index = 0;
 
