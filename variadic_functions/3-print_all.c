@@ -14,7 +14,6 @@ void print_all(const char * const format, ...)
 	unsigned int holder, index = 0;
 	char *string;
 	va_list ap;
-
 	while (format)
 	{
 		va_start(ap, format);
@@ -24,8 +23,7 @@ void print_all(const char * const format, ...)
 			switch (format[index])
 			{
 				case 'c':
-					printf("%c", va_arg(ap, int));
-					break;
+					printf("%c", va_arg(ap, int)); break;
 				case 'i':
 					printf("%d", va_arg(ap, int));
 					break;
