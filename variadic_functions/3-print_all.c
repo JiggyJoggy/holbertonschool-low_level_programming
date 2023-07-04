@@ -32,9 +32,7 @@ void print_all(const char * const format, ...)
 				case 's':
 					string = va_arg(ap, char *);
 					if (!string)
-					{
 						string = "(nil)";
-					}
 					printf("%s", string);
 					break;
 				default:
@@ -42,9 +40,7 @@ void print_all(const char * const format, ...)
 					break;
 			}
 			if (format[index + 1] && holder)
-			{
 				printf(", ");
-			}
 			index++;
 		}
 		va_end(ap);
