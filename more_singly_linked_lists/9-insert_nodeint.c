@@ -50,10 +50,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		i++;
 	}
 	if (i == idx)
+	{
 		newNode->next = NULL;
 		prev->next = newNode;
 		return (newNode);
-
+	}
 	free(newNode);
 	return (NULL);
 }
