@@ -30,9 +30,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			head->value = strdup(value);
 
 			if (!head->value)
-			{
 				return (0);
-			}
+
 			return (1);
 		}
 		head = head->next;
@@ -46,6 +45,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (!newNode->key)
 		return (0);
+	newNode->value = strdup(value);
 
 	if (!newNode->value)
 		return (0);
