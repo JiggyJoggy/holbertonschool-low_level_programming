@@ -1,7 +1,9 @@
 #include "search_algos.h"
 
 /*
- *
+ * print_array - entry point
+ * @array: points to an array
+ * @size: size
  *
  */
 
@@ -19,8 +21,14 @@ void print_array(const int *array, size_t size)
 }
 
 /*
+ * binary_search - entry point
  *
+ * description: binary search algorithm
+ * @array: points to an array
+ * @size: size
+ * @value: value
  *
+ * Return: -1 if NULL, else return binary
  */
 
 int binary_search(int *array, size_t size, int value)
