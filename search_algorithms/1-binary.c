@@ -1,6 +1,6 @@
 #include "search_algos.h"
 
-/*
+/**
  * print_array - entry point
  * @array: points to an array
  * @size: size
@@ -20,7 +20,7 @@ void print_array(const int *array, size_t size)
 	printf("\n");
 }
 
-/*
+/**
  * binary_search - entry point
  *
  * description: binary search algorithm

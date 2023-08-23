@@ -1,6 +1,6 @@
 #include "search_algos.h"
 
-/*
+/**
  * linear_search - entry point
  * Description: using a linear search
  * @array: points to an array
