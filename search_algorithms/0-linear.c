@@ -4,6 +4,7 @@
  * linear_search - entry point
  *
  * description: using a linear search
+ *
  * @array: points to an array
  * @size: size
  * @value: value
