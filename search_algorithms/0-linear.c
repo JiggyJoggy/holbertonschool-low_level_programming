@@ -1,8 +1,14 @@
 #include "search_algos.h"
 
 /*
+ * linear_search - entry point
  *
+ * description: using a linear search
+ * @array: points to an array
+ * @size: size
+ * @value: value
  *
+ * Return: -1 if NULL, else return index
  */
 
 int linear_search(int *array, size_t size, int value)
